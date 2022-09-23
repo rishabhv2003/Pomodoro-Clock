@@ -5,7 +5,7 @@
 body,html{
     width: 100%;
     height: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(bg2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -26,4 +26,17 @@ body,html{
 #particles-js{
     width: 100%;
     height: 100vh;
+}
+.btns{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-direction: row;
+}
+#btnStart,#btnBreak{ 
+   box-sizing: 20px; 
+   height: 5vh;
+   width: 10vw;
+   background-color: rgb(191, 142, 236);
 }
