@@ -25,7 +25,6 @@ html {
 }
 
 #clock {
-    padding: 10px;
     text-align: center;
     color: rgb(10, 24, 83);
 }
@@ -47,6 +46,7 @@ html {
 #btnReset,
 #btnRefresh {
     /* position: fixed; */
+    margin-top: 2rem;
     box-sizing: 20px;
     height: 5vh;
     width: 10vw;

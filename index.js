@@ -1,14 +1,16 @@
 var minutes = 25;
 var seconds = 0;
+var bell = new Audio("bell.wav");
 function temp() {
     document.getElementById('minutes').innerHTML = minutes;
     document.getElementById('seconds').innerHTML = seconds;
 }
-
+var count = 1;
+document.getElementById('done').classList.add("show_message");
 function start() {
     minutes = 24;
     seconds = 59;
-
+    document.getElementById('done').innerHTML = "Study Session : " + count;
     document.getElementById('minutes').innerHTML = minutes;
     document.getElementById('seconds').innerHTML = seconds;
 
@@ -17,21 +19,19 @@ function start() {
 
     function minutesTimer() {
         minutes = minutes - 1;
-        document.getElementById('minutes').innerHTML = minutes
+        document.getElementById('minutes').innerHTML = minutes;
     }
     function secondsTimer() {
         seconds = seconds - 1;
-        document.getElementById('seconds').innerHTML = seconds
-        if(seconds <= 56){
-            if(minutes <= 24)
-            {
-               clearInterval(minutes_interval); 
-               clearInterval(seconds_interval); 
-               document.getElementById('done').innerHTML = "Session Completed !!! Take a break"
-
-
-               document.getElementById('done').classList.add("show_message");
-
+        document.getElementById('seconds').innerHTML = seconds;
+        if (seconds <= 56) {
+            if (minutes <= 24) {
+                clearInterval(minutes_interval);
+                clearInterval(seconds_interval);
+                bell.play();
+                document.getElementById('done').innerHTML = "Session Completed !!! Take a break";
+                document.getElementById('done').classList.add("show_message");
+                count++;
             }
             seconds = 60;
         }
