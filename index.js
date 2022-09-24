@@ -1,9 +1,9 @@
 var minutes = 25;
 var seconds = 0;
-// function temp() {
-//     document.getElementById('minutes').innerHTML = minutes;
-//     document.getElementById('seconds').innerHTML = seconds;
-// }
+function temp() {
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
+}
 
 function start() {
     minutes = 24;

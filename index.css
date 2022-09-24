@@ -44,7 +44,8 @@ html {
 }
 
 #btnStart,
-#btnReset {
+#btnReset,
+#btnRefresh {
     /* position: fixed; */
     box-sizing: 20px;
     height: 5vh;
@@ -54,7 +55,8 @@ html {
 }
 
 #btnStart:hover,
-#btnReset:hover {
+#btnReset:hover,
+#btnRefresh:hover {
     color: brown;
     border: 2px solid rgb(247, 243, 243);
     transition: 0.3s ease;
@@ -69,6 +71,7 @@ html {
 }
 .show_message{
     position:fixed;
+    width: -webkit-fill-available;
     margin: auto; 
     display: block;
     padding: 1rem;
