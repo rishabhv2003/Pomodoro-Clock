@@ -69,10 +69,11 @@ html {
     justify-content: space-between;
     align-items: center;
 }
-.show_message{
-    position:fixed;
+
+.show_message {
+    position: fixed;
     width: -webkit-fill-available;
-    margin: auto; 
+    margin: auto;
     display: block;
     padding: 1rem;
     color: rgb(10, 24, 83);

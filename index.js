@@ -13,7 +13,6 @@ function start() {
     document.getElementById('done').innerHTML = "Study Session : " + count;
     document.getElementById('minutes').innerHTML = minutes;
     document.getElementById('seconds').innerHTML = seconds;
-
     var minutes_interval = setInterval(minutesTimer, 60000);
     var seconds_interval = setInterval(secondsTimer, 1000);
 
@@ -38,27 +37,6 @@ function start() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 setInterval(() => {
     var a = new Date();
     var time = ((a.getHours() % 12) + ":" + a.getMinutes() + ":" + a.getSeconds());
@@ -66,8 +44,6 @@ setInterval(() => {
     document.getElementById('showTime').innerHTML = time;
     document.getElementById('showDate').innerHTML = date;
 }, 1000);
-
-
 
 particlesJS('particles-js',
     {
