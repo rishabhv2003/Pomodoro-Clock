@@ -4,7 +4,7 @@ var seconds = 0;
 //     document.getElementById('minutes').innerHTML = minutes;
 //     document.getElementById('seconds').innerHTML = seconds;
 // }
-start();
+
 function start() {
     minutes = 24;
     seconds = 59;
@@ -22,11 +22,16 @@ function start() {
     function secondsTimer() {
         seconds = seconds - 1;
         document.getElementById('seconds').innerHTML = seconds
-        if(seconds <= 0){
-            if(minutes <= 0)
+        if(seconds <= 56){
+            if(minutes <= 24)
             {
                clearInterval(minutes_interval); 
                clearInterval(seconds_interval); 
+               document.getElementById('done').innerHTML = "Session Completed !!! Take a break"
+
+
+               document.getElementById('done').classList.add("show_message");
+
             }
             seconds = 60;
         }

@@ -44,7 +44,8 @@ html {
 }
 
 #btnStart,
-#btnBreak {
+#btnReset {
+    /* position: fixed; */
     box-sizing: 20px;
     height: 5vh;
     width: 10vw;
@@ -53,7 +54,7 @@ html {
 }
 
 #btnStart:hover,
-#btnBreak:hover {
+#btnReset:hover {
     color: brown;
     border: 2px solid rgb(247, 243, 243);
     transition: 0.3s ease;
@@ -65,4 +66,14 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.show_message{
+    position:fixed;
+    margin: auto; 
+    display: block;
+    padding: 1rem;
+    color: rgb(10, 24, 83);
+    background-color: rgb(250, 250, 219);
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
 }
