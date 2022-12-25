@@ -7,6 +7,7 @@ function temp() {
 }
 var count = 1;
 document.getElementById('done').classList.add("show_message");
+/* function for starting and setting the timer */
 function start() {
     minutes = 24;
     seconds = 59;
@@ -36,7 +37,7 @@ function start() {
         }
     }
 }
-
+/* function to show date and time */
 setInterval(() => {
     var a = new Date();
     var time = ((a.getHours() % 12) + ":" + a.getMinutes() + ":" + a.getSeconds());
