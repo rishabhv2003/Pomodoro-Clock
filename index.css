@@ -42,10 +42,25 @@ html {
     flex-direction: row;
 }
 
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnStart {
+    border-radius: 5px;
+    margin-right: 4px;
+}
+
+#btnRefresh {
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
 #btnStart,
 #btnReset,
 #btnRefresh {
-    /* position: fixed; */
     margin-top: 2rem;
     box-sizing: 20px;
     height: 5vh;
@@ -80,4 +95,17 @@ html {
     background-color: rgb(250, 250, 219);
     border-radius: 0.5rem;
     transition: 0.5s ease;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80vw;
+    }
+
+    #btnStart,
+    #btnReset,
+    #btnRefresh {
+        width: 20vw;
+    }
 }
